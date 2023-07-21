@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  div {
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .emoji-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 1200px;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .emoji-card {
+    flex: 0 0 200px;
+    min-height: 200px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .emoji-card span {
+    font-size: 3rem;
+  }
+  
+  .emoji-card p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #333;
+    text-align: center; 
+    word-wrap: break-word; 
+  }
+  
+  .pagination {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #007BFF;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .emoji-card {
+      flex-basis: 180px; 
+      min-height: 180px; 
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+    .emoji-card {
+      flex-basis: 160px;
+      min-height: 160px;
+    }
+  
+    .emoji-card span {
+      font-size: 2.5rem;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .emoji-card {
+      flex-basis: 140px;
+      min-height: 140px;
+    }
+  
+    .emoji-card span {
+      font-size: 2rem;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .emoji-card {
+      flex-basis: 120px; 
+      min-height: 120px; 
+    }
+  
+    .emoji-card span {
+      font-size: 1.5rem;
+    }
+  }
+  
